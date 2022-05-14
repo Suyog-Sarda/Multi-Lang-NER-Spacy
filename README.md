@@ -27,3 +27,13 @@ Pre-requisites:
          }
      ```
      Note: If your language is not in the mapping above, install the following multilanguage model : `python -m spacy download xx_ent_wiki_sm`
+
+
+Example:
+
+```
+NER("Elon Musk is the richest man in USA after acquiring Twitter",'en')
+
+[{'end_pos': 35, 'start_pos': 32, 'text': 'USA', 'type': 'GPE'},
+ {'end_pos': 59, 'start_pos': 52, 'text': 'Twitter', 'type': 'ORG'}]
+ ```
